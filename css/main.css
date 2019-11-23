@@ -1,0 +1,845 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    background-color: #ECF5FB;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    margin: 0.4em 0;
+}
+
+h1::after {
+    content: url(../img/picto-plus.png);
+    margin-left: 10px;
+    vertical-align: -5%;
+}
+
+h2 {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 300;
+}
+
+h2::before {
+    content: url(../img/picto-profil.png);
+    margin-right: 10px;
+    vertical-align: -20%;
+}
+
+.section {
+    width: 60%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+li {
+    flex: 1 1 150px;
+    list-style: none;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+p {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.work {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.name {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.h3 {
+    position: relative;
+    font-size: 21px;
+}
+
+.h3Special::before {
+    /* Point bleu */
+    content: "";
+    position: absolute;
+    margin-top: -25px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #0071b9;
+    left: 50%;
+    margin-left: -6px;
+}
+
+.h3Special {
+    position: relative;
+    font-size: 21px;
+}
+
+.h3Special::before {
+    /* Point bleu */
+    content: "";
+    position: absolute;
+    margin-top: -25px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #0071b9;
+    left: 50%;
+    margin-left: -6px;
+}
+
+.dg {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px rgb(141, 141, 141);
+    margin: 0 auto;
+    background-color: white;
+    font-size: 20px;
+    /* Texte */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.disappear {
+    cursor: pointer;
+}
+
+.dsi {
+    width: 70px;
+    height: 70px;
+    border-radius: 55px;
+    border: 3px solid #0071b9;
+    box-shadow: 1px 1px 4px rgb(141, 141, 141);
+    margin: 0 auto;
+    background-color: white;
+    font-size: 30px;
+    /* Texte */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 400;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.vertical {
+    margin: 0 auto;
+    border-left: 2px solid rgb(49, 49, 49);
+    height: 25px;
+    width: 0px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.body {
+    margin-top: 50px;
+}
+
+.animation {
+    cursor: pointer;
+    transition-duration: 0.5s
+}
+
+.animation:hover {
+    background-color: #b3d2e6;
+    transition-duration: 0.5s
+}
+
+.myStyle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px rgb(141, 141, 141);
+    margin: 0 auto;
+    background-color: white;
+    font-size: 20px;
+    /* Texte */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition-duration: 0.4s;
+    position: relative;
+    z-index: 2;
+}
+
+.survol::before {
+    content: "ici";
+    font-size: 50px;
+}
+
+@keyframes slidein {
+    from {
+        top: 0px;
+    }
+    to {
+        top: -50px;
+        font-size: 0px;
+        opacity: 0;
+    }
+}
+
+.move {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slidein 0.4s forwards;
+    position: relative;
+    margin: 0 auto;
+}
+
+.titreSecond {
+    width: 70px;
+    height: 70px;
+    border-radius: 55px;
+    border: 3px solid #0071b9;
+    box-shadow: 1px 1px 4px rgb(141, 141, 141);
+    margin: 0 auto;
+    background-color: white;
+    font-size: 21px;
+    /* Texte */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition-duration: 0.4s
+}
+
+.change {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    margin: 0.4em 0;
+    font-size: 2em;
+    transition-duration: 0.4s
+}
+
+.change::after {
+    content: url(../img/picto-plus.png);
+    margin-left: 10px;
+    vertical-align: -5%;
+}
+
+.transformation {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 300;
+    font-size: 1.5em;
+    transition-duration: 0.4s
+}
+
+.transformation::before {
+    content: url(../img/picto-profil.png);
+    margin-right: 10px;
+    vertical-align: -20%;
+}
+
+.posteHide {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.sectionHide {
+    display: none;
+}
+
+.nameHide {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.verticalHide {
+    display: none;
+}
+
+.none {
+    display: none;
+}
+
+.one {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px rgb(141, 141, 141);
+    margin: 0 auto;
+    background-color: white;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
+@keyframes slideOne {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: -60px;
+    }
+}
+
+.slide {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideOne 0.3s forwards;
+}
+
+@keyframes slideOut {
+    from {
+        margin-left: -60px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+.slideOut {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideOut 0.3s forwards;
+}
+
+.two {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px rgb(141, 141, 141);
+    margin: 0 auto;
+    background-color: white;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
+@keyframes slideTwo {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: -120px;
+    }
+}
+
+.slideTwo {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideTwo 0.3s forwards;
+}
+
+@keyframes slideOutTwo {
+    from {
+        margin-left: -120px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+.slideOutTwo {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideOutTwo 0.3s forwards;
+}
+
+.three {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px rgb(141, 141, 141);
+    margin: 0 auto;
+    background-color: white;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
+@keyframes slideThree {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: -180px;
+    }
+}
+
+.slideThree {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideThree 0.3s forwards;
+}
+
+@keyframes slideOutThree {
+    from {
+        margin-left: -180px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+.slideOutThree {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideOutThree 0.3s forwards;
+}
+
+.four {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px rgb(141, 141, 141);
+    margin: 0 auto;
+    background-color: white;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
+@keyframes slideFour {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 80px;
+    }
+}
+
+.slideFour {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideFour 0.3s forwards;
+}
+
+@keyframes slideOutFour {
+    from {
+        margin-left: 80px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+.slideOutFour {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideOutFour 0.3s forwards;
+}
+
+.five {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px rgb(141, 141, 141);
+    margin: 0 auto;
+    background-color: white;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
+@keyframes slideFive {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 140px;
+    }
+}
+
+.slideFive {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideFive 0.3s forwards;
+}
+
+@keyframes slideOutFive {
+    from {
+        margin-left: 140px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+.slideOutFive {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideOutFive 0.3s forwards;
+}
+
+.six {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px rgb(141, 141, 141);
+    margin: 0 auto;
+    background-color: white;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
+@keyframes slideSix {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 200px;
+    }
+}
+
+.slideSix {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideSix 0.3s forwards;
+}
+
+@keyframes slideOutSix {
+    from {
+        margin-left: 200px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+.slideOutSix {
+    -webkit-animation: slidein 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: slideOutSix 0.3s forwards;
+}
+
+b {
+    top: 15px;
+    position: relative;
+    font-weight: 600;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+}
+
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
